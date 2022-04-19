@@ -13,9 +13,27 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  
 End license text.  
-
+  
 ----------------------------------------------------------  
-
+  
+##Workflow examples  
+  
+1. Visualisation of low frequency spectra and spectrograms:  
+In directory RFA_single_signal_processing, run  
+rfa_single.py DATA/Female_English_German/RT_E1.wav  
+The graph is displayed after several seconds, and a copy is kept in directory FIGURES.  
+  
+2. Comparison of low frequency property vectors of different files:  
+2.1. In directory RFA_multiple_signal_processing, run  
+rfa_mult.py DATA/Female_English_German/RT_E1.wav  
+The CSV file outputs are in the CSV directory.  
+2.2. In directory RFA_multiple_signal_processing, run  
+numdistnetdendro.py CSV/lfammaxfreqs.csv  
+The hierarchical clustering (dendrogram) output is in directory DENDRO.  
+The distance network outputs are in directory GRAPHVIZ.  
+  
+----------------------------------------------------------    
+  
 ##NOTE:  
 This software requires the following items to be installed:  
 - Python3  
