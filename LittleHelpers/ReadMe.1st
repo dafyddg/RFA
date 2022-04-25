@@ -1,0 +1,35 @@
+ReadMe.1st for LittleHelpers directory
+D. Gibbon, 2022-04-25
+
+----------------------------------------------------
+
+Purpose: Small software tools for use with RFA
+
+----------------------------------------------------
+
+1a. Demonstration of AM demodulation, input: mono WAV file:
+	basic_am_demod.py
+	Usage: python basic_am_demod.py <monowavfile.wav>
+	Output: PNG of signal processing visualisation
+1b. Calibration demo input for basic_am_demod.py:
+	sine-200x5x6.wav
+1c. Speech demo input for basic_am_demod.py:
+	one-to-thirty-2044_04_22_11s_16k.wav
+
+----------------------------------------------------
+
+2a.Textgrid to CSV format converter:
+	textgrid2csv.py
+	Usage: python textgrid2csv.py <praatfile.TextGrid>
+	Output: CSV with enhanced info from TextGrid
+2b. TextGrid demo file for textgrid2csv.py:
+	one-to-thirty-2044_04_22_11s_16k.TextGrid
+
+----------------------------------------------------
+
+3. Note: these two files can be used for a Praat demo:
+	one-to-thirty-2044_04_22_11s_16k.TextGrid
+	one-to-thirty-2044_04_22_11s_16k.wav
+
+----------------------------------------------------
+EOF
