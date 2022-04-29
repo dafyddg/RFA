@@ -1,0 +1,41 @@
+Friday
+
+The slides with the background information to Rhythm Formant Theory, and its Rhythm Formant Analysis methodology and software, are on GitHub for your own consumption.
+https://github.com/dafyddg/RFA
+
+I think that the best strategy today is strictly practical:
+
+First hour: LittleHelper apps
+
+1. Questions arising from apps:
+	textgrid2csv.py
+	basic_am_demod.py
+	basic_am_demod_dev.py
+
+2. 'Pilot experiment' on rhythm regularity:
+	(1) record your voice (suggestion: counting)
+	(2) with "basic_am_demod_dev.py"
+		- identify frequency peaks in the LF spectrum
+		- predict average syllable duration in seconds.
+	(3) annotate syllables with Praat
+	(4) with "textgrid2csv.py" create a CSV file
+	(5) read the CSV file into a spreadsheet
+		- calculate averate syllable duration from annotation
+	(6) informally, compare result with prediction
+	(7) analyse the CSV file with TGA:
+		- http://wwwhomes.uni-bielefeld.de/gibbon/TGA/
+
+3. F0 estimation (FM demodulation)
+	- from GitHub
+		download "basic_fm_demod.py" and the .WAV files
+	- check different voices
+		- "basic_fm_demod.py <soundfile.wav> counting|mlk|putonghua>"
+
+Break
+
+Second hour:
+
+1. Directory "RFA_single_signal_processing"
+	- full RFA visualisation
+2. Directory "RFA_multiple_signal_processing"
+	- comparison with unsupervised machine learning
