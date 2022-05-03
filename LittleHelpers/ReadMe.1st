@@ -16,18 +16,24 @@ Purpose: Small software tools for use with RFA
 1c. Speech demo input for basic_am_demod.py:
 	one-to-thirty-2044_04_22_11s_16k.wav
 
+2.a Demonstration of FM demodulation method, input: mono WAV file
+	Usage: PyADMF.py wavfilename high|fairlyhigh|mid|fairlylow|low single|multiple
+	Output: visualisation of steps in AMDF demodulation
+2.b Demonstration of FM demodulation: input: mono WAV file
+	Usage: ./basic_fm_demod.py wavfilename high|fairlyhigh|mid|fairlylow|low
+
 ----------------------------------------------------
 
-2a.Textgrid to CSV format converter:
+3a.Textgrid to CSV format converter:
 	textgrid2csv.py
 	Usage: python textgrid2csv.py <praatfile.TextGrid>
 	Output: CSV with enhanced info from TextGrid
-2b. TextGrid demo file for textgrid2csv.py:
+3b. TextGrid demo file for textgrid2csv.py:
 	one-to-thirty-2044_04_22_11s_16k.TextGrid
 
 ----------------------------------------------------
 
-3. Note: these two files can be used for a Praat demo:
+4. Note: these two files can be used for a Praat demo:
 	one-to-thirty-2044_04_22_11s_16k.TextGrid
 	one-to-thirty-2044_04_22_11s_16k.wav
 
