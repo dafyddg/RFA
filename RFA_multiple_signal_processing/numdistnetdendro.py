@@ -72,7 +72,6 @@ def drawdendrogram(names, data, netname, dendroname, figparams, mindistance, max
 		halign, valign, orientation,
 		netname, dendroname) = figparams
 
-	data = np.array(data)
 	# Length equalisation loop missing in earlier versions. Added on 2022-07-11, DG
 	# Equalise lengths of data
 	newsize = np.max( [ len(val) for val in data ] )
