@@ -53,8 +53,8 @@ def spectrogramarray(signal, fs, specfreqmin, specfreqmax, specdownsample, spect
 #	print("Elements per hertz:", elementsperhertz)
 	xmin = specfreqmin * elementsperhertz
 	xmax = specfreqmax * elementsperhertz
-	sfmin = np.int(np.floor(xmin))
-	sfmax = np.int(np.ceil(xmax))
+	sfmin = int(np.floor(xmin))
+	sfmax = int(np.ceil(xmax))
 	magarray = np.array([ x[sfmin:sfmax] for x in magarray ])**spectrumpower
 	freqarray = [ x[sfmin:sfmax] for x in freqarray ]
 
